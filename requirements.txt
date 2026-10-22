@@ -1,0 +1,12 @@
+# INTENTIONALLY OUTDATED - SCA demo
+Flask==1.0.2
+Werkzeug==0.15.6
+Jinja2==2.10
+MarkupSafe==1.1.1
+itsdangerous==1.1.0
+click==7.1.2
+PyYAML==5.3.1          # REACHABLE: yaml.load(FullLoader) on user input (CVE-2020-14343)
+requests==2.19.1       # REACHABLE: used for outbound fetches (CVE-2018-18074, CVE-2023-32681)
+urllib3==1.23          # transitive of requests
+Pillow==8.0.0          # NOT REACHABLE: installed, never imported
+cryptography==3.2      # NOT REACHABLE: installed, never imported
